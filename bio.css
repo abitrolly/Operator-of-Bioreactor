@@ -1,0 +1,177 @@
+﻿/* Общие настройки */
+body{
+margin:0px;
+color: #66ff66;
+background-color: #333333;
+}
+
+a
+{
+color:#009900;
+font-weight: bold;
+text-decoration:underline;
+}
+a:visited{
+color:#009900;
+font-weight: bold;
+text-decoration:underline;
+}
+a:hover{
+font-weight: bold;
+text-decoration:none;
+}
+
+a.help
+{
+font-size:20px; 
+text-decoration:none;
+font-weight:normal; 
+}
+a.help:hover{
+color:green;}
+
+a.context
+{
+font-size:10px;text-align:right;vertical-align: top;
+text-decoration:none;
+font-weight:normal; 
+}
+a.context:hover{
+color:green;}
+
+
+a.menu_item
+{
+font-size:12px; 
+font-weight:bold; 
+color:#006633;
+}
+
+a.menu_item:visited
+{
+text-decoration:underline;
+}
+a.menu_item:hover
+{
+text-decoration:none;
+}
+
+
+/* Шапка страницы: заголовки, сервис */
+h1.header{
+color: #009900;
+font-size: 36px;
+    font-variant: small-caps;
+    font-weight: bolder;
+    line-height: 1em;
+text-align:center;
+}
+
+h3.header{
+color: #009900;
+font-size:20px;
+font-variant: small-caps;
+    font-weight: 600;
+text-align:center;
+}
+
+table.res{
+border: 1px;
+border-spacing:0;
+border-collapse: separate; 
+border-spacing: 10px;
+}
+
+
+
+DIV.help
+{
+padding:5px;
+ border: 2px solid #006600;
+width:225px;
+display:none;
+margin-top:15px;
+}
+DIV.ressources
+{
+padding:5px;
+ border: 2px solid #006600;
+width:225px;
+}
+DIV.steuerung
+{
+padding:5px;
+margin-left:8px;
+
+ border: 2px solid #006600;
+width:450px;
+}
+DIV.info
+{
+padding:5px;
+margin-left:8px;
+
+ border: 2px solid #006600;
+width:185px;
+}
+div.graph
+{
+padding:5px;
+margin-left:8px;
+display:none;
+
+ border: 2px solid #006600;
+width:450px;
+}
+
+div.winw
+{
+padding:5px;
+padding-bottom:15px;
+background-color:#333333;
+position:absolute;
+top:40%;
+left:30%;
+border: 3px solid  #006600;
+width:50%;
+
+display:none;
+z-index:100;}
+
+div.savew
+{
+padding:5px;
+padding-bottom:15px;
+background-color:#333333;
+position:absolute;
+top:40%;
+left:30%;
+border: 3px solid  #006600;
+width:450px;
+display:none;
+
+z-index:101;}
+
+
+
+input
+{background-color: #333333;
+border-color:black;
+color:#00cc00;
+}
+textarea
+{background-color: #333333;
+border-color:black;
+color:#00cc00;
+}
+
+
+option
+{background-color: #333333;
+border-color:black;
+color:#00cc00;
+}
+input.text
+{width:4em;
+}
+

@@ -1,0 +1,107 @@
+﻿<head><title>Оператор биореактора</title>
+ <style type="text/css" media="all">@import "bio.css";</style>
+ <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+ <meta http-equiv="Content-Language" content="ru" />
+ <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+ </head>
+<script type="text/javascript" src="iecanvas.js"></script>
+ <script type="text/javascript" src="events.js"></script>
+ <script type="text/javascript" src="graph.js"></script>
+ <script type="text/javascript" src="help.js"></script>
+<script type="text/javascript" src="bio.js"></script>
+<script type="text/javascript" src="save.js"></script>
+<body style="padding-right:35px;padding-left:35px; font-size:18px;" onload="preload();">
+
+<a href="http://shiitman.net" style="position:absolute; top:5px; left:5px; font-size:10px;" title="Вернуться на shiitman.net">Back to shiitman.net</a>
+
+<h1 class="header" style="margin-top: 30px;"><img src="logo1.gif" align=baseline>Оператор биореактора</h1>
+<table align=center>
+<tr><td valign=top>
+<div id="#ressources" class="ressources">
+<table class="res" >
+<tr><td colspan=2><h3  class="header" align=center>Ресурсы</h3></td></tr>
+<tr><td><a href="javascript:help('matan')">Матан</a></td><td><div id="#matan">0</div></td></tr>
+<tr><td><a href="javascript:help('metan')">Метан</a></td><td><div id="#metan">0</div></td></tr>
+<tr><td><a href="javascript:help('smeh')">Смехуечки</a></td><td><div id="#smeh">0</div></td></tr>
+<tr><td><a href="javascript:help('govno')">Говно</a></td><td><div id="#govno">0</div></td></tr>
+<tr><td><a href="javascript:help('bydlo')">Быдло</a></td><td><div id="#bydlo">0</div></td></tr>
+<tr><td><a href="javascript:help('scientist')">Ученые</a></td><td><div id="#scientist">0</div></td></tr>
+<tr><td><a href="javascript:help('unhuman')">Нелюди</a></td><td><div id="#unhuman">0</div></td></tr>
+<tr><td><a href="javascript:help('robot')">Роботы</a></td><td><div id="#robot">0</div></td></tr>
+<tr><td colspan=2><h3  class="header" style="margin-top:1em;;" align=center>Вредители</h3></td></tr>
+<tr><td><a href="javascript:help('priest')">Клерикалы</a></td><td><div id="#priest">0</div></td></tr>
+<tr><td><a href="javascript:help('humanist')">Гуманитарии</a></td><td><div id="#humanist">0</div></td></tr>
+<tr><td><a href="javascript:help('religion')">Религиозный дурман</a></td><td><div id="#religion">0</div></td></tr>
+</table>
+</div>
+
+<div id="#help" class="help">
+</div>
+
+</td>
+
+
+<td valign=top>
+
+<div class="steuerung">
+
+<h3  class="header" align=center>Управление</h3>
+<table>
+<tr align=center><td align=left><b>Ученые</b></td><td><a href=javascript:help('razmnu')>Образование</a><br><a href="javascript:plus_div('scientist', 'work0')" class="help">+</a><input id="#scientist_work0"  type="text" class="text" value=0 onchange="correct_input('scientist', 'work0');" onblur ="correct_input('scientist', 'work0');"><a href="javascript:minus_div('scientist', 'work0')" class="help">-</a></td><td><a href=javascript:help('science_dev')>Наука</a><br><a href="javascript:plus_div('scientist', 'work1')" class="help">+</a><input id="#scientist_work1" type="text" class="text" value=0  onchange="correct_input('scientist', 'work1');" onblur ="correct_input('scientist', 'work1);"><a href="javascript:minus_div('scientist', 'work1')" class="help">-</a></td><td><a href=javascript:help('prosv')>Просвещение</a><br><a href="javascript:plus_div('scientist', 'work2')" class="help">+</a><input id="#scientist_work2" type="text" class="text" value=0  onchange="correct_input('scientist', 'work2');" onblur ="correct_input('scientist', 'work2');"><a href="javascript:minus_div('scientist', 'work2')" class="help">-</a></td><td>Осталось:<br> <span id="#scientist_reserv"></span></td></tr>
+<tr align=center><td align=left><b>Роботы</b></td><td><a href=javascript:help('razmnr')>Размножение</a><br><a href="javascript:plus_div('robot', 'work0')" class="help">+</a><input id="#robot_work0" type="text" class="text" value=0 onchange="correct_input('robot', 'work0');" onblur ="correct_input('robot', 'work0);"><a href="javascript:minus_div('robot', 'work0')" class="help">-</a></td><td><a href=javascript:help('repressiir')>Репрессии</a><br><a href="javascript:plus_div('robot', 'work1')" class="help">+</a><input id="#robot_work1" type="text" class="text" value=0  onchange="correct_input('robot', 'work1');" onblur ="correct_input('robot', 'work2');"><a href="javascript:minus_div('robot', 'work1')" class="help">-</a></td><td><a href=javascript:help('product')>Производство</a><br><a href="javascript:plus_div('robot', 'work2')" class="help">+</a><input id="#robot_work2" type="text" class="text" value=0  onchange="correct_input('robot', 'work2');" onblur ="correct_input('robot', 'work2');"><a href="javascript:minus_div('robot', 'work2')" class="help">-</a></td><td>Осталось:<br> <span id="#robot_reserv"></span></td></tr>
+<tr align=center><td align=left><b>Нелюди</b></td><td><a href=javascript:help('prosv')>Просвещение</a><br><a href="javascript:plus_div('unhuman', 'work0')" class="help">+</a><input id="#unhuman_work0" type="text" class="text" value=0 onchange="correct_input('unhuman', 'work0');"><a href="javascript:minus_div('unhuman', 'work0')" class="help">-</a></td><td><a href=javascript:help('repressiiu')>Репрессии</a><br><a href="javascript:plus_div('unhuman', 'work1')" class="help">+</a><input id="#unhuman_work1" type="text" class="text" value=0  onchange="correct_input('unhuman', 'work1');" onblur ="correct_input('unhuman', 'work1);"><a href="javascript:minus_div('unhuman', 'work1')" class="help">-</a></td><td><a href=javascript:help('smeh_dev')>Смехуечки</a><br><a href="javascript:plus_div('unhuman', 'work2')" class="help">+</a><input id="#unhuman_work2" type="text" class="text" value=0  onchange="correct_input('unhuman', 'work2');" onblur ="correct_input('unhuman', 'work2');"><a href="javascript:minus_div('unhuman', 'work2')" class="help">-</a></td><td>Осталось:<br> <span id="#unhuman_reserv"></span></td></tr>
+</table>
+<table>
+<tr><td><a href="javascript:help('upbio')" class="context">help</a><br><input type=button id = "#upbio" value="Улучшение биореактора" onclick="upgrade_bio();" ></td><td><div id="#bio_up"></div></td></tr>
+<tr><td><a href="javascript:help('uprobot')" class="context">help</a><br><input type=button id = "#uprobot" value="Развитие робототехники" onclick="upgrade_robot();" ></td><td><div id="#robot_up"></div></td></tr>
+<tr><td><a href="javascript:help('upunhuman')" class="context">help</a><br><input type=button id = "#upunhuman" value="Развитие генетики" onclick="upgrade_unhuman();" ></td><td><div id="#unhuman_up"></div></td></tr>
+<tr><td><a href="javascript:help('upscience')" class="context">help</a><br><input type=button id = "#upscience" value="Развитие фундаментальной науки" onclick="upgrade_science();" ></td><td><div id="#science_up"></div></td></tr>
+<tr><td><a href="javascript:help('rosatiy')" class="context">help</a><br><input type=button id = "#roscall" value="Воззвать к Росатому" onclick="call_rosatiy();" ></td><td><div id="#rosatiy_call"></div></td></tr>
+</table>
+
+<p align=left style="margin-top:40px;">
+<input type=button value="Сделать ход" onclick="n_it_b();"> <input type=checkbox id="#rt" onclick="real_time();"> - режим реального времени</p><p align="left" style="margin-top:5px;"><input type="button" value="Сохранить/Загрузить игру" onclick="show_window_s();"></p><p align="left" style="margin-top:5px;"><input type="button" value="Новая игра" onclick="document.location.reload();"></p>
+<div style="text-align:right" id="#tooglgr"><a href="javascript:show_graph();" class="menu_item">Показать график</a></div>
+
+</div>
+
+<div align=center style="margin-top:10px; " class="graph" id="#graph_">
+
+<h3 class=header>График</h3>
+<table style="background-color:white;" width="400px" height="350px"><tr><td><canvas  id="canvas" width="400px" height="350px"></canvas></td></tr></table>
+<table align=center>
+
+<tr><td align=left> <b><nobr><font color=green><input type="checkbox" onchange="redraw_graph()" id="#showmet">метан</font></nobr>, <nobr><font color=red><input type="checkbox" onchange="redraw_graph()" id="#showmat" checked>матан</font>,</nobr> <nobr><font color=blue><input type="checkbox" onchange="redraw_graph()" id="#showrob">роботы</font>,</nobr><nobr><font color=yellow><input type="checkbox" onchange="redraw_graph()" id="#showunh">нелюди</font>,</nobr><nobr><font color=orange><input type="checkbox" onchange="redraw_graph()" id="#showscient">ученые</font>,</nobr><nobr><font color=purple><input type="checkbox" onchange="redraw_graph()" id="#showpriest">клерикалы</font></nobr>, <nobr><font color=black><input type="checkbox" onchange="redraw_graph()" id="#showbydlo">быдло</font></nobr><nobr><font color=brown><input type="checkbox" onchange="redraw_graph()" id="#showgovno">говно</font></nobr><nobr><font color=gray><input type="checkbox" onchange="redraw_graph()" id="#showhumanist">гуманитарии</font></nobr><nobr><font color="aqua"><input type="checkbox" onchange="redraw_graph()" id="#showsmeh">смехуечки</font></nobr></td></tr>
+<tr><td align=center>
+Масштаб: <select id="#mass" size=1 onblur="redraw_graph();" onchange="redraw_graph();"><option value=1>1</option><option value=5>5</option><option value=10>10</option><option value=25>25</option><option value=50>50</option><option value=100>100</option></select>.</b>
+</td></tr></table>
+
+</div>
+
+
+</td>
+
+<td valign=top>
+<div class=info>
+<h3  class="header" align=center>Ход <span id='#step'>0</span></h3>
+<textarea COLS=20 rows=25 id="#news"></textarea></td>
+
+</tr>
+</table>
+
+<div class="winw" id="#messwin">
+<div style="text-align:right" id="#close_mess"><a href="javascript:close_window();" class="menu_item">Закрыть окно</a></div><br>
+<div id="#messagetxt"></div>
+<div align=center id="#messagebtn"><input type=button value="Сразиться с агрессором" onclick="fight_proc();"><input type=button value="Игнорировать" onclick="ignore_proc();"></div>
+
+ </div>
+
+<div class="savew" id="#mess_window_s">
+<div style="text-align:right;" id="#close_savew"><a href="javascript:close_window_s();" class="menu_item">Закрыть окно</a></div>
+<h3 class="header">Сохранение/загрузка</h3>
+<div style="margin:5px; margin-bottom:10px;" align="left">Для того, чтобы сохранить игру, выделите текст (ctrl-a) и скопируйте его в текстовый файл (ctrl-c/ctrl-v для пользователей Windows). Для того, чтобы загрузить игру, очистите поле ввода и скопируйте в него содержимое ранее сохраненного файла.</div><div align=center><textarea id="#savetxt"  rows=3 cols=50 style="margin-bottom:5px"></textarea>
+ <input type=button onclick="extract_str(savetxt.value);"value="Загрузить из строки"><input type=button onclick="savetxt.value=create_string();" value="Генерировать строку"></div>
+ </div>
+
+</body>
+</html>
