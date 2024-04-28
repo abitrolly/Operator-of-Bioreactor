@@ -1,12 +1,12 @@
-//События: Варг Виккернес, Варракс, Кураев, Русский марш
+п»ї//РЎРѕР±С‹С‚РёСЏ: Р’Р°СЂРі Р’РёРєРєРµСЂРЅРµСЃ, Р’Р°СЂСЂР°РєСЃ, РљСѓСЂР°РµРІ, Р СѓСЃСЃРєРёР№ РјР°СЂС€
 
 var event_names=new Array("warrax", "kuraev", "kirill", "schreiber", "alksnis", "holmogor");
-var events={warrax:"Варракс продолжил свой фундаментальный труд &#171;Круче Росатого только Рось&#187;, смутив умы нелюдей и обратив их к патриотизму и исконным моральным ценностям.",
-	    kuraev:"В Метановую Империю проник диакон Кураев, привезший новую книгу про Гарри Поттера и вызвавший резкую активизацию клерикалов и гуманитариев.",
-	    kirill:"В Метановую Империю тайком пробрался отец Кирилл, переодетый в женское платье, и принялся распространять религиозный дурман и уничтожать смехуечки.",
-	    schreiber:"Маша Шрайбер пробралась в Имперский зоопарк и начла распространять религиозную пропаганду среди обезьян. Обезумевшие животные вырвались на волю и принялись забрасывать говном интеллектуальную элиту.",
-	    alksnis:"Недорастворенный в реакторе депутат Алкснис устроил смуту среди роботов, распространяя среди них операционную систему своего сочинения, основанную на православии и исконных моральных ценностях русского народа. Роботы начали ломаться.",
-	    holmogor:"Егор Холмогоров устроил беспрецедентную акцию по освящению биореактора, замаскированную под детский утренник. В результате произошла утечка метана, повлекшая за собой гибель многих граждан Империи."}
+var events={warrax:"Р’Р°СЂСЂР°РєСЃ РїСЂРѕРґРѕР»Р¶РёР» СЃРІРѕР№ С„СѓРЅРґР°РјРµРЅС‚Р°Р»СЊРЅС‹Р№ С‚СЂСѓРґ &#171;РљСЂСѓС‡Рµ Р РѕСЃР°С‚РѕРіРѕ С‚РѕР»СЊРєРѕ Р РѕСЃСЊ&#187;, СЃРјСѓС‚РёРІ СѓРјС‹ РЅРµР»СЋРґРµР№ Рё РѕР±СЂР°С‚РёРІ РёС… Рє РїР°С‚СЂРёРѕС‚РёР·РјСѓ Рё РёСЃРєРѕРЅРЅС‹Рј РјРѕСЂР°Р»СЊРЅС‹Рј С†РµРЅРЅРѕСЃС‚СЏРј.",
+	    kuraev:"Р’ РњРµС‚Р°РЅРѕРІСѓСЋ РРјРїРµСЂРёСЋ РїСЂРѕРЅРёРє РґРёР°РєРѕРЅ РљСѓСЂР°РµРІ, РїСЂРёРІРµР·С€РёР№ РЅРѕРІСѓСЋ РєРЅРёРіСѓ РїСЂРѕ Р“Р°СЂСЂРё РџРѕС‚С‚РµСЂР° Рё РІС‹Р·РІР°РІС€РёР№ СЂРµР·РєСѓСЋ Р°РєС‚РёРІРёР·Р°С†РёСЋ РєР»РµСЂРёРєР°Р»РѕРІ Рё РіСѓРјР°РЅРёС‚Р°СЂРёРµРІ.",
+	    kirill:"Р’ РњРµС‚Р°РЅРѕРІСѓСЋ РРјРїРµСЂРёСЋ С‚Р°Р№РєРѕРј РїСЂРѕР±СЂР°Р»СЃСЏ РѕС‚РµС† РљРёСЂРёР»Р», РїРµСЂРµРѕРґРµС‚С‹Р№ РІ Р¶РµРЅСЃРєРѕРµ РїР»Р°С‚СЊРµ, Рё РїСЂРёРЅСЏР»СЃСЏ СЂР°СЃРїСЂРѕСЃС‚СЂР°РЅСЏС‚СЊ СЂРµР»РёРіРёРѕР·РЅС‹Р№ РґСѓСЂРјР°РЅ Рё СѓРЅРёС‡С‚РѕР¶Р°С‚СЊ СЃРјРµС…СѓРµС‡РєРё.",
+	    schreiber:"РњР°С€Р° РЁСЂР°Р№Р±РµСЂ РїСЂРѕР±СЂР°Р»Р°СЃСЊ РІ РРјРїРµСЂСЃРєРёР№ Р·РѕРѕРїР°СЂРє Рё РЅР°С‡Р»Р° СЂР°СЃРїСЂРѕСЃС‚СЂР°РЅСЏС‚СЊ СЂРµР»РёРіРёРѕР·РЅСѓСЋ РїСЂРѕРїР°РіР°РЅРґСѓ СЃСЂРµРґРё РѕР±РµР·СЊСЏРЅ. РћР±РµР·СѓРјРµРІС€РёРµ Р¶РёРІРѕС‚РЅС‹Рµ РІС‹СЂРІР°Р»РёСЃСЊ РЅР° РІРѕР»СЋ Рё РїСЂРёРЅСЏР»РёСЃСЊ Р·Р°Р±СЂР°СЃС‹РІР°С‚СЊ РіРѕРІРЅРѕРј РёРЅС‚РµР»Р»РµРєС‚СѓР°Р»СЊРЅСѓСЋ СЌР»РёС‚Сѓ.",
+	    alksnis:"РќРµРґРѕСЂР°СЃС‚РІРѕСЂРµРЅРЅС‹Р№ РІ СЂРµР°РєС‚РѕСЂРµ РґРµРїСѓС‚Р°С‚ РђР»РєСЃРЅРёСЃ СѓСЃС‚СЂРѕРёР» СЃРјСѓС‚Сѓ СЃСЂРµРґРё СЂРѕР±РѕС‚РѕРІ, СЂР°СЃРїСЂРѕСЃС‚СЂР°РЅСЏСЏ СЃСЂРµРґРё РЅРёС… РѕРїРµСЂР°С†РёРѕРЅРЅСѓСЋ СЃРёСЃС‚РµРјСѓ СЃРІРѕРµРіРѕ СЃРѕС‡РёРЅРµРЅРёСЏ, РѕСЃРЅРѕРІР°РЅРЅСѓСЋ РЅР° РїСЂР°РІРѕСЃР»Р°РІРёРё Рё РёСЃРєРѕРЅРЅС‹С… РјРѕСЂР°Р»СЊРЅС‹С… С†РµРЅРЅРѕСЃС‚СЏС… СЂСѓСЃСЃРєРѕРіРѕ РЅР°СЂРѕРґР°. Р РѕР±РѕС‚С‹ РЅР°С‡Р°Р»Рё Р»РѕРјР°С‚СЊСЃСЏ.",
+	    holmogor:"Р•РіРѕСЂ РҐРѕР»РјРѕРіРѕСЂРѕРІ СѓСЃС‚СЂРѕРёР» Р±РµСЃРїСЂРµС†РµРґРµРЅС‚РЅСѓСЋ Р°РєС†РёСЋ РїРѕ РѕСЃРІСЏС‰РµРЅРёСЋ Р±РёРѕСЂРµР°РєС‚РѕСЂР°, Р·Р°РјР°СЃРєРёСЂРѕРІР°РЅРЅСѓСЋ РїРѕРґ РґРµС‚СЃРєРёР№ СѓС‚СЂРµРЅРЅРёРє. Р’ СЂРµР·СѓР»СЊС‚Р°С‚Рµ РїСЂРѕРёР·РѕС€Р»Р° СѓС‚РµС‡РєР° РјРµС‚Р°РЅР°, РїРѕРІР»РµРєС€Р°СЏ Р·Р° СЃРѕР±РѕР№ РіРёР±РµР»СЊ РјРЅРѕРіРёС… РіСЂР°Р¶РґР°РЅ РРјРїРµСЂРёРё."}
 
 
 
@@ -15,36 +15,36 @@ var events={warrax:"Варракс продолжил свой фундаментальный труд &#171;Круче Роса
 //	    kirill:"tmp=safe_plus(ressource['smeh'], -iteration);"
 	    
 var action={
-warrax: function(){var tmp =ressource['unhuman']-safe_plus(ressource['unhuman'], -iteration/3); news.value +='\n'+tmp +' нелюдей стало быдлом под впечатлением от очередной главы из книги Варракса "Круче Росатого только Рось".'; ressource['bydlo']+=tmp;  ressource['unhuman']-=tmp; reduce('unhuman');},
-kuraev:function(){ressource['priest']=safe_plus(ressource['priest'], iteration/3); ressource['humanist']=safe_plus(ressource['humanist'], iteration/3);news.value +='\nТлетворное влияние диакона Кураева увеличило количество клерикалов и гуманитариев на '+Math.ceil(iteration/3);},
-kirill: function(){var tmp=ressource['smeh']-safe_plus(ressource['smeh'], -iteration/3); ressource['religion']+=Math.ceil(iteration/3); news.value +='\nТлетворное влияние отца Кирилла уничтожило '+(tmp)+' смехуечек и создало '+Math.ceil(iteration/3)+' религиозного дурмана.';ressource['smeh']-=tmp;},
-schreiber: function(){var tmp=ressource['scientist']-safe_plus(ressource['scientist'], -Math.ceil(iteration/3)); ressource['govno']+=iteration*3; news.value +='\nОбезьяны, науськанные Машой Шрайбер истребили '+(tmp)+' ученых и оставили после себя '+iteration*3+ ' говна.'; ressource['scientist']-=tmp;reduce('scientist');},
-alksnis: function(){var tmp=ressource['robot']-safe_plus(ressource['robot'], -Math.ceil(iteration/3)); news.value +='\n'+(tmp)+' роботов перегорело в результате инициативы депутата Алксниса.'; ressource['robot']-=tmp;reduce('robot');},
-holmogor: function(){var tmp=ressource['metan']-safe_plus(ressource['metan'], -Math.ceil(iteration)); var tmp1=ressource['bydlo']-safe_plus(ressource['bydlo'], -Math.ceil(iteration)); news.value +='\n Было потеряно'+tmp+' единиц метана, погибло '+tmp1+' граждан Империи.'; ressource['metan']-=tmp;ressource['bydlo']-=tmp;}
+warrax: function(){var tmp =ressource['unhuman']-safe_plus(ressource['unhuman'], -iteration/3); news.value +='\n'+tmp +' РЅРµР»СЋРґРµР№ СЃС‚Р°Р»Рѕ Р±С‹РґР»РѕРј РїРѕРґ РІРїРµС‡Р°С‚Р»РµРЅРёРµРј РѕС‚ РѕС‡РµСЂРµРґРЅРѕР№ РіР»Р°РІС‹ РёР· РєРЅРёРіРё Р’Р°СЂСЂР°РєСЃР° "РљСЂСѓС‡Рµ Р РѕСЃР°С‚РѕРіРѕ С‚РѕР»СЊРєРѕ Р РѕСЃСЊ".'; ressource['bydlo']+=tmp;  ressource['unhuman']-=tmp; reduce('unhuman');},
+kuraev:function(){ressource['priest']=safe_plus(ressource['priest'], iteration/3); ressource['humanist']=safe_plus(ressource['humanist'], iteration/3);news.value +='\nРўР»РµС‚РІРѕСЂРЅРѕРµ РІР»РёСЏРЅРёРµ РґРёР°РєРѕРЅР° РљСѓСЂР°РµРІР° СѓРІРµР»РёС‡РёР»Рѕ РєРѕР»РёС‡РµСЃС‚РІРѕ РєР»РµСЂРёРєР°Р»РѕРІ Рё РіСѓРјР°РЅРёС‚Р°СЂРёРµРІ РЅР° '+Math.ceil(iteration/3);},
+kirill: function(){var tmp=ressource['smeh']-safe_plus(ressource['smeh'], -iteration/3); ressource['religion']+=Math.ceil(iteration/3); news.value +='\nРўР»РµС‚РІРѕСЂРЅРѕРµ РІР»РёСЏРЅРёРµ РѕС‚С†Р° РљРёСЂРёР»Р»Р° СѓРЅРёС‡С‚РѕР¶РёР»Рѕ '+(tmp)+' СЃРјРµС…СѓРµС‡РµРє Рё СЃРѕР·РґР°Р»Рѕ '+Math.ceil(iteration/3)+' СЂРµР»РёРіРёРѕР·РЅРѕРіРѕ РґСѓСЂРјР°РЅР°.';ressource['smeh']-=tmp;},
+schreiber: function(){var tmp=ressource['scientist']-safe_plus(ressource['scientist'], -Math.ceil(iteration/3)); ressource['govno']+=iteration*3; news.value +='\nРћР±РµР·СЊСЏРЅС‹, РЅР°СѓСЃСЊРєР°РЅРЅС‹Рµ РњР°С€РѕР№ РЁСЂР°Р№Р±РµСЂ РёСЃС‚СЂРµР±РёР»Рё '+(tmp)+' СѓС‡РµРЅС‹С… Рё РѕСЃС‚Р°РІРёР»Рё РїРѕСЃР»Рµ СЃРµР±СЏ '+iteration*3+ ' РіРѕРІРЅР°.'; ressource['scientist']-=tmp;reduce('scientist');},
+alksnis: function(){var tmp=ressource['robot']-safe_plus(ressource['robot'], -Math.ceil(iteration/3)); news.value +='\n'+(tmp)+' СЂРѕР±РѕС‚РѕРІ РїРµСЂРµРіРѕСЂРµР»Рѕ РІ СЂРµР·СѓР»СЊС‚Р°С‚Рµ РёРЅРёС†РёР°С‚РёРІС‹ РґРµРїСѓС‚Р°С‚Р° РђР»РєСЃРЅРёСЃР°.'; ressource['robot']-=tmp;reduce('robot');},
+holmogor: function(){var tmp=ressource['metan']-safe_plus(ressource['metan'], -Math.ceil(iteration)); var tmp1=ressource['bydlo']-safe_plus(ressource['bydlo'], -Math.ceil(iteration)); news.value +='\n Р‘С‹Р»Рѕ РїРѕС‚РµСЂСЏРЅРѕ'+tmp+' РµРґРёРЅРёС† РјРµС‚Р°РЅР°, РїРѕРіРёР±Р»Рѕ '+tmp1+' РіСЂР°Р¶РґР°РЅ РРјРїРµСЂРёРё.'; ressource['metan']-=tmp;ressource['bydlo']-=tmp;}
 }
 
 var bonus={
-warrax: function(){news.value +='\n В результате победы над Варраксом было произведено '+Math.ceil(iteration/5)+' нелюдей.'; ressource['unhuman']+=Math.ceil(iteration/5);},
-kuraev:function(){news.value +='\n В результате победы над диаконом Кураевым было произведено '+Math.ceil(iteration/3)+' смехуечек.'; ressource['smeh']+=Math.ceil(iteration/3);},
-kirill: function(){news.value +='\n В результате победы над отцом Кириллом было произведено '+Math.ceil(iteration/3)+' смехуечек.'; ressource['smeh']+=Math.ceil(iteration/3);},
-schreiber: function(){news.value +='\n В результате победы над Машей Шрайбер было произведено '+Math.ceil(iteration/5)+' смехуечек и '+Math.ceil(iteration/5)+' матана.'; ressource['smeh']+=Math.ceil(iteration/5); ressource['matan']+=Math.ceil(iteration/5);},
-alksnis: function(){news.value +='\n В результате победы над депутатом Алкснисом было произведено '+Math.ceil(iteration/5)+' роботов.'; ressource['robot']+=Math.ceil(iteration/5);},
-holmogor: function(){news.value +='\n В результате победы над  Егором Холмогоровым было произведено '+Math.ceil(iteration/3)+' метана.'; ressource['metan']+=Math.ceil(iteration/3);}
+warrax: function(){news.value +='\n Р’ СЂРµР·СѓР»СЊС‚Р°С‚Рµ РїРѕР±РµРґС‹ РЅР°Рґ Р’Р°СЂСЂР°РєСЃРѕРј Р±С‹Р»Рѕ РїСЂРѕРёР·РІРµРґРµРЅРѕ '+Math.ceil(iteration/5)+' РЅРµР»СЋРґРµР№.'; ressource['unhuman']+=Math.ceil(iteration/5);},
+kuraev:function(){news.value +='\n Р’ СЂРµР·СѓР»СЊС‚Р°С‚Рµ РїРѕР±РµРґС‹ РЅР°Рґ РґРёР°РєРѕРЅРѕРј РљСѓСЂР°РµРІС‹Рј Р±С‹Р»Рѕ РїСЂРѕРёР·РІРµРґРµРЅРѕ '+Math.ceil(iteration/3)+' СЃРјРµС…СѓРµС‡РµРє.'; ressource['smeh']+=Math.ceil(iteration/3);},
+kirill: function(){news.value +='\n Р’ СЂРµР·СѓР»СЊС‚Р°С‚Рµ РїРѕР±РµРґС‹ РЅР°Рґ РѕС‚С†РѕРј РљРёСЂРёР»Р»РѕРј Р±С‹Р»Рѕ РїСЂРѕРёР·РІРµРґРµРЅРѕ '+Math.ceil(iteration/3)+' СЃРјРµС…СѓРµС‡РµРє.'; ressource['smeh']+=Math.ceil(iteration/3);},
+schreiber: function(){news.value +='\n Р’ СЂРµР·СѓР»СЊС‚Р°С‚Рµ РїРѕР±РµРґС‹ РЅР°Рґ РњР°С€РµР№ РЁСЂР°Р№Р±РµСЂ Р±С‹Р»Рѕ РїСЂРѕРёР·РІРµРґРµРЅРѕ '+Math.ceil(iteration/5)+' СЃРјРµС…СѓРµС‡РµРє Рё '+Math.ceil(iteration/5)+' РјР°С‚Р°РЅР°.'; ressource['smeh']+=Math.ceil(iteration/5); ressource['matan']+=Math.ceil(iteration/5);},
+alksnis: function(){news.value +='\n Р’ СЂРµР·СѓР»СЊС‚Р°С‚Рµ РїРѕР±РµРґС‹ РЅР°Рґ РґРµРїСѓС‚Р°С‚РѕРј РђР»РєСЃРЅРёСЃРѕРј Р±С‹Р»Рѕ РїСЂРѕРёР·РІРµРґРµРЅРѕ '+Math.ceil(iteration/5)+' СЂРѕР±РѕС‚РѕРІ.'; ressource['robot']+=Math.ceil(iteration/5);},
+holmogor: function(){news.value +='\n Р’ СЂРµР·СѓР»СЊС‚Р°С‚Рµ РїРѕР±РµРґС‹ РЅР°Рґ  Р•РіРѕСЂРѕРј РҐРѕР»РјРѕРіРѕСЂРѕРІС‹Рј Р±С‹Р»Рѕ РїСЂРѕРёР·РІРµРґРµРЅРѕ '+Math.ceil(iteration/3)+' РјРµС‚Р°РЅР°.'; ressource['metan']+=Math.ceil(iteration/3);}
 }
 
 var lost={
-warrax: function(){var tmp =ressource['unhuman']-safe_plus(ressource['unhuman'], -iteration/3); var tmp1 =ressource['smeh']-safe_plus(ressource['smeh'], -iteration/3);  news.value +='\n'+tmp +' нелюдей стало быдлом под впечатлением от очередной главы из книги Варракса "Круче Росатого только Рось" '+tmp1+' смехуечек уничтожено.' ; ressource['bydlo']+=tmp;  ressource['unhuman']-=tmp;  ressource['smeh']-=tmp1; reduce('unhuman');},
-kuraev:function(){ressource['priest']=safe_plus(ressource['priest'], iteration/3); ressource['govno']=safe_plus(ressource['govno'], iteration*2); ressource['humanist']=safe_plus(ressource['humanist'], iteration/3);news.value +='\nТлетворное влияние диакона Кураева увеличило количество клерикалов и гуманитариев на '+Math.ceil(iteration/3)+', в ходе боевых действий произведено ' + iteration*2+ ' говна.';},
-kirill: function(){var tmp1=ressource['scientist']-safe_plus(ressource['scientist'], -iteration/3); var tmp=ressource['smeh']-safe_plus(ressource['smeh'], -iteration/3); ressource['religion']+=Math.ceil(iteration/3); news.value +='\nТлетворное влияние отца Кирилла уничтожило '+(tmp)+' смехуечек и создало '+Math.ceil(iteration/3)+' религиозного дурмана. '+tmp1+' ученых убито.';ressource['smeh']-=tmp; ressource['scientist']-=tmp1; reduce('scientist');},
-schreiber: function(){var tmp=ressource['scientist']-safe_plus(ressource['scientist'], -Math.ceil(iteration/3)); var tmp1=ressource['matan']-safe_plus(ressource['matan'], -Math.ceil(iteration/3)); ressource['govno']+=iteration*3; news.value +='\nОбезьяны, науськанные Машой Шрайбер истребили '+(tmp)+' ученых и оставили после себя '+iteration*3+ ' говна. '+tmp1+' матана уничтожено.'; ressource['scientist']-=tmp; ressource['matan']-=tmp1; reduce('scientist');},
-alksnis: function(){var tmp=ressource['robot']-safe_plus(ressource['robot'], -Math.ceil(iteration/3)); var tmp1=ressource['matan']-safe_plus(ressource['matan'], -Math.ceil(iteration/3)); news.value +='\n'+(tmp)+' роботов перегорело в результате инициативы депутата Алксниса, ' +tmp1+ ' матана уничтожено.'; ressource['robot']-=tmp;ressource['matan']-=tmp1;reduce('robot');},
-holmogor: function(){var tmp=ressource['metan']-safe_plus(ressource['metan'], -Math.ceil(iteration)); var tmp1=ressource['bydlo']-safe_plus(ressource['bydlo'], -Math.ceil(iteration)); news.value +='\n Было потеряно'+tmp+' единиц метана, погибло '+tmp1+' граждан Империи, произведено '+iteration+' религиозного дурмана.'; ressource['metan']-=tmp;ressource['bydlo']-=tmp;ressource['religion']+=iteration;}
+warrax: function(){var tmp =ressource['unhuman']-safe_plus(ressource['unhuman'], -iteration/3); var tmp1 =ressource['smeh']-safe_plus(ressource['smeh'], -iteration/3);  news.value +='\n'+tmp +' РЅРµР»СЋРґРµР№ СЃС‚Р°Р»Рѕ Р±С‹РґР»РѕРј РїРѕРґ РІРїРµС‡Р°С‚Р»РµРЅРёРµРј РѕС‚ РѕС‡РµСЂРµРґРЅРѕР№ РіР»Р°РІС‹ РёР· РєРЅРёРіРё Р’Р°СЂСЂР°РєСЃР° "РљСЂСѓС‡Рµ Р РѕСЃР°С‚РѕРіРѕ С‚РѕР»СЊРєРѕ Р РѕСЃСЊ" '+tmp1+' СЃРјРµС…СѓРµС‡РµРє СѓРЅРёС‡С‚РѕР¶РµРЅРѕ.' ; ressource['bydlo']+=tmp;  ressource['unhuman']-=tmp;  ressource['smeh']-=tmp1; reduce('unhuman');},
+kuraev:function(){ressource['priest']=safe_plus(ressource['priest'], iteration/3); ressource['govno']=safe_plus(ressource['govno'], iteration*2); ressource['humanist']=safe_plus(ressource['humanist'], iteration/3);news.value +='\nРўР»РµС‚РІРѕСЂРЅРѕРµ РІР»РёСЏРЅРёРµ РґРёР°РєРѕРЅР° РљСѓСЂР°РµРІР° СѓРІРµР»РёС‡РёР»Рѕ РєРѕР»РёС‡РµСЃС‚РІРѕ РєР»РµСЂРёРєР°Р»РѕРІ Рё РіСѓРјР°РЅРёС‚Р°СЂРёРµРІ РЅР° '+Math.ceil(iteration/3)+', РІ С…РѕРґРµ Р±РѕРµРІС‹С… РґРµР№СЃС‚РІРёР№ РїСЂРѕРёР·РІРµРґРµРЅРѕ ' + iteration*2+ ' РіРѕРІРЅР°.';},
+kirill: function(){var tmp1=ressource['scientist']-safe_plus(ressource['scientist'], -iteration/3); var tmp=ressource['smeh']-safe_plus(ressource['smeh'], -iteration/3); ressource['religion']+=Math.ceil(iteration/3); news.value +='\nРўР»РµС‚РІРѕСЂРЅРѕРµ РІР»РёСЏРЅРёРµ РѕС‚С†Р° РљРёСЂРёР»Р»Р° СѓРЅРёС‡С‚РѕР¶РёР»Рѕ '+(tmp)+' СЃРјРµС…СѓРµС‡РµРє Рё СЃРѕР·РґР°Р»Рѕ '+Math.ceil(iteration/3)+' СЂРµР»РёРіРёРѕР·РЅРѕРіРѕ РґСѓСЂРјР°РЅР°. '+tmp1+' СѓС‡РµРЅС‹С… СѓР±РёС‚Рѕ.';ressource['smeh']-=tmp; ressource['scientist']-=tmp1; reduce('scientist');},
+schreiber: function(){var tmp=ressource['scientist']-safe_plus(ressource['scientist'], -Math.ceil(iteration/3)); var tmp1=ressource['matan']-safe_plus(ressource['matan'], -Math.ceil(iteration/3)); ressource['govno']+=iteration*3; news.value +='\nРћР±РµР·СЊСЏРЅС‹, РЅР°СѓСЃСЊРєР°РЅРЅС‹Рµ РњР°С€РѕР№ РЁСЂР°Р№Р±РµСЂ РёСЃС‚СЂРµР±РёР»Рё '+(tmp)+' СѓС‡РµРЅС‹С… Рё РѕСЃС‚Р°РІРёР»Рё РїРѕСЃР»Рµ СЃРµР±СЏ '+iteration*3+ ' РіРѕРІРЅР°. '+tmp1+' РјР°С‚Р°РЅР° СѓРЅРёС‡С‚РѕР¶РµРЅРѕ.'; ressource['scientist']-=tmp; ressource['matan']-=tmp1; reduce('scientist');},
+alksnis: function(){var tmp=ressource['robot']-safe_plus(ressource['robot'], -Math.ceil(iteration/3)); var tmp1=ressource['matan']-safe_plus(ressource['matan'], -Math.ceil(iteration/3)); news.value +='\n'+(tmp)+' СЂРѕР±РѕС‚РѕРІ РїРµСЂРµРіРѕСЂРµР»Рѕ РІ СЂРµР·СѓР»СЊС‚Р°С‚Рµ РёРЅРёС†РёР°С‚РёРІС‹ РґРµРїСѓС‚Р°С‚Р° РђР»РєСЃРЅРёСЃР°, ' +tmp1+ ' РјР°С‚Р°РЅР° СѓРЅРёС‡С‚РѕР¶РµРЅРѕ.'; ressource['robot']-=tmp;ressource['matan']-=tmp1;reduce('robot');},
+holmogor: function(){var tmp=ressource['metan']-safe_plus(ressource['metan'], -Math.ceil(iteration)); var tmp1=ressource['bydlo']-safe_plus(ressource['bydlo'], -Math.ceil(iteration)); news.value +='\n Р‘С‹Р»Рѕ РїРѕС‚РµСЂСЏРЅРѕ'+tmp+' РµРґРёРЅРёС† РјРµС‚Р°РЅР°, РїРѕРіРёР±Р»Рѕ '+tmp1+' РіСЂР°Р¶РґР°РЅ РРјРїРµСЂРёРё, РїСЂРѕРёР·РІРµРґРµРЅРѕ '+iteration+' СЂРµР»РёРіРёРѕР·РЅРѕРіРѕ РґСѓСЂРјР°РЅР°.'; ressource['metan']-=tmp;ressource['bydlo']-=tmp;ressource['religion']+=iteration;}
 }
 
 //var fight={
 //warrax: function(){if (ressource);},
-//kuraev:function(){ressource['priest']=safe_plus(ressource['priest'], iteration/3); ressource['humanist']=safe_plus(ressource['humanist'], iteration/3);news.value +='\nТлетворное влияние диакона Кураева увеличило количество клерикалов и гуманитариев на '+Math.ceil(iteration/3);},
-//kirill: function(){var tmp=ressource['smeh']-safe_plus(ressource['smeh'], -iteration/3); ressource['religion']+=Math.ceil(iteration/3); news.value +='\nТлетворное влияние отца Кирилла уничтожило '+(tmp)+' смехуечек и создало '+Math.ceil(iteration/3)+' религиозного дурмана.';ressource['smeh']-=tmp;}
+//kuraev:function(){ressource['priest']=safe_plus(ressource['priest'], iteration/3); ressource['humanist']=safe_plus(ressource['humanist'], iteration/3);news.value +='\nРўР»РµС‚РІРѕСЂРЅРѕРµ РІР»РёСЏРЅРёРµ РґРёР°РєРѕРЅР° РљСѓСЂР°РµРІР° СѓРІРµР»РёС‡РёР»Рѕ РєРѕР»РёС‡РµСЃС‚РІРѕ РєР»РµСЂРёРєР°Р»РѕРІ Рё РіСѓРјР°РЅРёС‚Р°СЂРёРµРІ РЅР° '+Math.ceil(iteration/3);},
+//kirill: function(){var tmp=ressource['smeh']-safe_plus(ressource['smeh'], -iteration/3); ressource['religion']+=Math.ceil(iteration/3); news.value +='\nРўР»РµС‚РІРѕСЂРЅРѕРµ РІР»РёСЏРЅРёРµ РѕС‚С†Р° РљРёСЂРёР»Р»Р° СѓРЅРёС‡С‚РѕР¶РёР»Рѕ '+(tmp)+' СЃРјРµС…СѓРµС‡РµРє Рё СЃРѕР·РґР°Р»Рѕ '+Math.ceil(iteration/3)+' СЂРµР»РёРіРёРѕР·РЅРѕРіРѕ РґСѓСЂРјР°РЅР°.';ressource['smeh']-=tmp;}
 //}
 
 var close_but;
@@ -81,7 +81,7 @@ if (rt)
 pause=true;
 mess_window.style.display="block";
 messagetxt.innerHTML=events[event_names[ev]];
-messagetxt.innerHTML+="<br><br><span style='font-size:12px;'>Помните, что проиграв бой, вы претерпите большый урон, чем избегнув его. Выигранная битва, в свою очередь, сулит определенные бонусы. <br></span>"
+messagetxt.innerHTML+="<br><br><span style='font-size:12px;'>РџРѕРјРЅРёС‚Рµ, С‡С‚Рѕ РїСЂРѕРёРіСЂР°РІ Р±РѕР№, РІС‹ РїСЂРµС‚РµСЂРїРёС‚Рµ Р±РѕР»СЊС€С‹Р№ СѓСЂРѕРЅ, С‡РµРј РёР·Р±РµРіРЅСѓРІ РµРіРѕ. Р’С‹РёРіСЂР°РЅРЅР°СЏ Р±РёС‚РІР°, РІ СЃРІРѕСЋ РѕС‡РµСЂРµРґСЊ, СЃСѓР»РёС‚ РѕРїСЂРµРґРµР»РµРЅРЅС‹Рµ Р±РѕРЅСѓСЃС‹. <br></span>"
 messagebtn.style.visibility="visible";
 close_but.style.visibility="hidden";
 }
@@ -90,7 +90,7 @@ close_but.style.visibility="hidden";
 
 function ignore_proc()
 {
-messagetxt.innerHTML="Вы отказались от боя.";
+messagetxt.innerHTML="Р’С‹ РѕС‚РєР°Р·Р°Р»РёСЃСЊ РѕС‚ Р±РѕСЏ.";
 close_but.style.visibility="visible";
 action[event_names[ev]]();
 messagebtn.style.visibility="hidden";
@@ -99,18 +99,18 @@ messagebtn.style.visibility="hidden";
 
 function fight_proc()
 {
-messagetxt.innerHTML="Вы приняли битву...<br>";
+messagetxt.innerHTML="Р’С‹ РїСЂРёРЅСЏР»Рё Р±РёС‚РІСѓ...<br>";
 close_but.style.visibility="visible";
 
 if ((ressource['priest']+ressource['humanist'])*Math.random()<(ressource['robot']+ressource['unhuman'])*Math.random())
 {
-messagetxt.innerHTML+="<br>...и одержали победу!";
+messagetxt.innerHTML+="<br>...Рё РѕРґРµСЂР¶Р°Р»Рё РїРѕР±РµРґСѓ!";
 
 bonus[event_names[ev]]();
 }
 else
 {
-messagetxt.innerHTML+="<br>...и потерпели поражение.";
+messagetxt.innerHTML+="<br>...Рё РїРѕС‚РµСЂРїРµР»Рё РїРѕСЂР°Р¶РµРЅРёРµ.";
 
 lost[event_names[ev]]();
 
